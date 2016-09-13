@@ -45,9 +45,11 @@
 
 /*主体css*/
    /*左侧栏css样式*/
+
     .subject .side{
         background:#ddd;
         width:30%;
+        height:2234px;
         padding-left:5%;
         padding-right:3%;
         min-height: 100%;
