@@ -6,7 +6,6 @@
     html,body,ul,li,div,img,hr,h2,h3,h4,h5{
         font-family: "Helvetica Neue","Comic Sans MS", cursive,serif,sans-serif;
     }
-
     #back{
         background:#2f393b;
         max-width: 1100px;
@@ -99,19 +98,48 @@
         font-weight:600;
         padding-left:10px;
     }
-    .links{
+    .blog{
         margin-top: 80px;
     }
 
-    .links li:first-child{
+    .blog li:first-child{
         font-weight: 700;
         font-size:1.4em;
         letter-spacing: 2px;
     }
-    .links li{
+    .blog li{
         margin-top:20px;
     }
+    .blog .blog-demo{
+        width: 90%;
+        margin:0 auto;
 
+    }
+    .blog .blog-demo:hover{
+        opacity:0.8;
+    }
+    .blog .blog-demo a{
+        text-decoration: none;
+    }
+    .blog .blog-demo img{
+        border:1px solid #2f393b;
+        width:90%;
+        height: 130px;
+    }
+    .blog-demo img:hover{
+        border:1px solid #fff;
+        padding:10px 0;
+        transition: all 1s;
+    }
+    .side .blog-more{
+        padding:5px 10px;
+        margin-left: 10px;
+        color: #fed136;
+        border:1px solid #065279;
+        background-color: #1b3645;
+        border-radius: 8px;
+        text-decoration: none;
+    }
 
 
    /*右侧栏css样式*/
@@ -156,7 +184,6 @@
     }
 
    .main .hobbies ul>li{
-
        width: 20%;
        float: left;
        text-align: center;
