@@ -1,0 +1,1 @@
+var exposure=function(){function o(o){o.css("opacity",0),$(window).on("scroll",function(){var n=o.offset().top,i=$(window).height(),t=$(window).scrollTop();n<i+t&&o.animate({opacity:1},1500)})}return{init:o}}();
