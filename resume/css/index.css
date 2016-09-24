@@ -48,7 +48,7 @@
     .subject .side{
         background:#ddd;
         width:30%;
-        height:2234px;
+        height:2633px;
         padding-left:5%;
         padding-right:3%;
         min-height: 100%;
@@ -170,6 +170,20 @@
         margin-top:50px;
         letter-spacing: 3px;
     }
+    .works .big-project li{
+        list-style: none;
+    }
+    .works .big-project img{
+        width: 400px;
+        height:250px;
+        border:1px solid #bbb;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+.works .big-project img:hover{
+    opacity: 0.4;
+    border:1px solid #4187c3;
+}
     .works .row img{
         width: 100%;
         height: 150px;
