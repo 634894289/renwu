@@ -34,3 +34,5 @@ gulp.task('js',function () {
        .pipe(uglify())
        .pipe(gulp.dest('dist/src/js/'));
 });
+
+gulp.task('build', ['html', 'css', 'js', 'img']);
