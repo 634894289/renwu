@@ -18,7 +18,7 @@
         clear: both;
     }
     #pdf{
-        width: 30px;
+        max-width: 30px;
         line-height: 30px;
         word-wrap: break-word;
         text-align: center;
@@ -47,7 +47,7 @@
     }
     .header h5:last-child{
         position: absolute;
-        width: 220px;
+        max-width: 220px;
         border:2px solid #fff;
         padding:4px;
         left:50%;
@@ -61,7 +61,7 @@
 
     .subject .side{
         background:#ddd;
-        width:30%;
+        max-width:30%;
         height:2653px;
         padding-left:5%;
         padding-right:3%;
@@ -101,7 +101,7 @@
         letter-spacing: 3px;
     }
     .contact li img{
-        width: 110px;
+        max-width: 110px;
         height:110px;
         border:5px solid #fffdef;
         border-radius: 50%;
@@ -125,7 +125,7 @@
         margin-top:20px;
     }
     .blog .blog-demo{
-        width: 90%;
+        max-width: 90%;
         margin:0 auto;
 
     }
@@ -137,7 +137,7 @@
     }
     .blog .blog-demo img{
         border:1px solid #2f393b;
-        width:90%;
+        max-width:90%;
         height: 130px;
     }
     .blog-demo img:hover{
@@ -159,7 +159,7 @@
    /*右侧栏css样式*/
     .main{
         float: left;
-        width: 70%;
+        max-width: 70%;
         min-height: 1232px;
         background: #fff;
         padding-left: 4%;
@@ -188,7 +188,7 @@
         list-style: none;
     }
     .works .big-project img{
-        width: 400px;
+        max-width: 400px;
         height:250px;
         border:1px solid #bbb;
         margin-left: 50%;
@@ -199,7 +199,7 @@
     border:1px solid #4187c3;
 }
     .works .row img{
-        width: 100%;
+        max-width: 100%;
         height: 150px;
         border:1px solid #cccccc;
     }
@@ -212,7 +212,7 @@
     }
 
    .main .hobbies ul>li{
-       width: 20%;
+       max-width: 20%;
        float: left;
        text-align: center;
        list-style-type:none;
