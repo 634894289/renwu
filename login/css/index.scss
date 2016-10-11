@@ -1,0 +1,249 @@
+
+$round:6px;
+$color:#fff;
+$textColor:#888;
+$textSize:12px;
+
+@mixin input{
+  max-width: 20rem;
+  border:1px solid #888;
+  -webkit-border-radius:$round;
+  -moz-border-radius:$round;
+  border-radius:$round;
+  background:rgba(0,0,0,0.3);
+  margin-bottom: 1.8rem;
+  text-align: center;
+}
+@mixin inputBox{
+  border:none;
+  background:rgba(0,0,0,0.3);
+  color: $textColor;
+  line-height: 1.8rem;
+  margin-left:13px;
+  width: 85%;
+}
+@mixin beforeAfter{
+  content: "";
+  display: inline-block;
+  border-top: 1px solid $textColor;
+  width: 35%;
+  margin-bottom: 5px;
+}
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+a{
+  text-decoration: none;
+  color:$color;
+}
+html{
+  font-family:cursive,"微软雅黑", sans-serif;
+  height: 100%;
+}
+body{
+  height:100%;
+}
+#back{
+  color: #fff;
+  background-image: url(../img/login.jpg);
+  background-repeat: no-repeat;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  -webkit-background-size:cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  position: relative;
+}
+#back:after{
+  display: block;
+  width: 100%;
+  height: 100%;
+  content: " ";
+  position: absolute;
+  background: #111;
+  opacity: 0.85;
+}
+//登录框部分css
+
+#login{
+  width: 15rem;
+  color: $color;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%); ;
+}
+@media screen and (max-width: 600px) {
+  #login{
+    width:150px;
+    color: #fec000;
+  }
+
+}
+#login h1{
+  margin-bottom: 40px;
+}
+#login h3{
+  position: relative;
+  margin-bottom: 2rem;
+  color: #ccc;
+}
+h3:before{
+  @include beforeAfter;
+  margin-right:10px;
+}
+h3:after{
+  @include beforeAfter;
+  margin-left:10px ;
+}
+@media screen and (max-width: 600px) {
+  h3:before{
+    display: none;
+  }
+  h3:after{
+    display: none;
+  }
+}
+.box-account{
+  @include input;
+}
+.box-password{
+  @include input;
+}
+#login i{
+  margin-left: 2px;
+}
+.box-account .account{
+  @include inputBox;
+}
+.box-password .password{
+  @include inputBox;
+}
+@media screen and (max-width: 600px) {
+  .box-account .account {
+    width: 100%;
+    margin:0 auto;
+    text-align: center;
+  }
+  .box-password .password{
+    width: 100%;
+    margin:0 auto;
+    text-align: center;
+
+  }
+  #login i{
+    padding:2px 0;
+  }
+}
+#login .btn{
+  background: #0d99a5;
+  opacity: 0.5;
+  border-radius: $round;
+  margin-bottom:15px;
+  cursor:pointer;
+}
+//翻滚效果
+.btn a {
+  color:#fff;
+  line-height:30px;
+  position: relative;
+  display: inline-block;
+  padding: 0 14px;
+  margin:0 25px;
+  -webkit-transition: -webkit-transform 0.3s;
+  -moz-transition: -moz-transform 0.3s;
+  transition: transform 0.3s;
+  -webkit-transform-origin: 50% 0;
+  -moz-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  transform-style: preserve-3d;
+
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+}
+.btn a span {
+  position: relative;
+  display: inline-block;
+  padding: 0 14px;
+  //background: #2195de;
+  -webkit-transition: -webkit-transform 0.3s;
+  -moz-transition: -moz-transform 0.3s;
+  transition: transform 0.3s;
+  -webkit-transform-origin: 50% 0;
+  -moz-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.btn a span::before {
+  text-align:center;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  //background: #0d99a5;
+  content: attr(data-hover);
+  -webkit-transition: background 0.3s;
+  -moz-transition: background 0.3s;
+  transition: background 0.3s;
+  -webkit-transform: rotateX(-90deg);
+  -moz-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+  -webkit-transform-origin: 50% 0;
+  -moz-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+}
+.btn a:hover span{
+  -webkit-transform: rotateX(90deg) translateY(-22px);
+  -moz-transform: rotateX(90deg) translateY(-22px);
+  transform: rotateX(90deg) translateY(-22px);
+}
+
+
+//翻滚结束
+#login .check{
+  font-size:12px;
+  padding:0 10px;
+  margin-bottom: 20px;
+
+}
+.check .check-remember{
+  float: left;
+}
+.check .check-forget{
+  float: right;
+}
+.check:after{
+  content: ' ';
+  display: block;
+  clear: both;
+}
+#login .registered{
+  opacity: 0.7;
+  border-radius: $round;
+  cursor:pointer;
+  border:1px solid $textColor;
+  margin-top:10px;
+  margin-bottom: 20px;
+}
+.registered:hover{
+  background:#999;
+  a{
+    color: #fec000;
+  };
+}
+#login p{
+  color: $textColor;
+  font-size: $textSize;
+}
