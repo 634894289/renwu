@@ -62,7 +62,7 @@
     .subject .side{
         background:#ddd;
         max-width:30%;
-        height:2653px;
+        height:2974px;
         padding-left:5%;
         padding-right:3%;
         min-height: 100%;
@@ -135,11 +135,12 @@
     }
     .blog .blog-demo{
         max-width: 90%;
-        margin:0 auto;
-
+        text-align: center;
     }
     .blog .blog-demo:hover{
         opacity:0.8;
+        padding-top:10px;
+        transition: all 1s;
     }
     .blog .blog-demo a{
         text-decoration: none;
@@ -151,12 +152,11 @@
     }
     .blog-demo img:hover{
         border:1px solid #fff;
-        padding:10px 0;
-        transition: all 1s;
+
     }
     .side .blog-more{
         padding:5px 10px;
-        margin-left: 10px;
+        margin-left: 15%;
         color: #fed136;
         border:1px solid #065279;
         background-color: #1b3645;
@@ -228,14 +228,13 @@
     }
 
    .main .hobbies ul>li{
-       max-width: 20%;
+       max-width: 150px;
+       margin-left:45px;
        float: left;
        text-align: center;
        list-style-type:none;
    }
-   .hobbies .clear{
-       margin-left:-40px;
-   }
+
 /*页面底部css样式*/
     .foot{
         color: #fff;
