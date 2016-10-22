@@ -1,0 +1,248 @@
+/*通用css样式*/
+    *{
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+    }
+    html,body,ul,li,div,img,hr,h2,h3,h4,h5{
+        font-family: "Helvetica Neue","Comic Sans MS", cursive,serif,sans-serif;
+    }
+    #back{
+        background:#2f393b;
+        max-width: 1100px;
+        margin:0 auto;
+        border-radius: 20px;
+    }
+    .clear:after{
+        content: ' ';
+        display: block;
+        clear: both;
+    }
+    #pdf{
+        max-width: 30px;
+        line-height: 30px;
+        word-wrap: break-word;
+        text-align: center;
+        background: #2f393b;
+        position: fixed;
+        top:20px;
+        padding: 5px 0;
+        margin-left: -30px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+/*头部css*/
+    .header{
+        position: relative;
+        color: #fff;
+        padding:35px 0;
+        text-align: center;
+    }
+    .header hr{
+
+        border-top:1px solid #cccccc;
+        height: 0;
+    }
+    .header h3{
+        margin-bottom: 40px;
+    }
+    .header h5:last-child{
+        position: absolute;
+        max-width: 220px;
+        border:2px solid #fff;
+        padding:4px;
+        left:50%;
+        bottom:35px;
+        background: #2f393b;
+        transform:translate(-50%);
+    }
+
+/*主体css*/
+   /*左侧栏css样式*/
+
+    .subject .side{
+        background:#ddd;
+        max-width:30%;
+        height:2974px;
+        padding-left:5%;
+        padding-right:3%;
+        min-height: 100%;
+        float: left;
+        padding-bottom:140px;
+    }
+    .side hr{
+        border-top:1px solid #2f393b;
+        margin-top:5px;
+
+    }
+    .side .personal a{
+        color: #2f393b;
+        text-decoration: none;
+        pointer-events: none;
+    }
+    .side .personal span{
+
+        font-size:1.2em;
+        font-weight: bold;
+        padding-left: 20%;
+    }
+    .personal li:first-child{
+        font-weight: 700;
+        font-size:1.4em;
+        letter-spacing: 3px;
+        margin-top:50px;
+    }
+
+    .subject .contact{
+        margin-top: 80px;
+    }
+    .contact li:first-child{
+        font-weight: 700;
+        font-size:1.4em;
+        letter-spacing: 3px;
+    }
+    .contact li img{
+        max-width: 110px;
+        height:110px;
+        border:5px solid #fffdef;
+        border-radius: 50%;
+
+    }
+    @media screen and (max-width: 480px){
+        .contact li img{
+            width:60px;
+            height:60px;
+            border:2px solid #1b91ff;
+            border-radius: 50%;
+
+        }
+    }
+    .contact span{
+        letter-spacing: 1px;
+        font-weight:600;
+        padding-left:10px;
+    }
+    .blog{
+        margin-top: 80px;
+    }
+
+    .blog li:first-child{
+        font-weight: 700;
+        font-size:1.4em;
+        letter-spacing: 2px;
+    }
+    .blog li{
+        margin-top:20px;
+    }
+    .blog .blog-demo{
+        max-width: 90%;
+        text-align: center;
+    }
+    .blog .blog-demo:hover{
+        opacity:0.8;
+        padding-top:10px;
+        transition: all 1s;
+    }
+    .blog .blog-demo a{
+        text-decoration: none;
+    }
+    .blog .blog-demo img{
+        border:1px solid #2f393b;
+        max-width:90%;
+        height: 130px;
+    }
+    .blog-demo img:hover{
+        border:1px solid #fff;
+
+    }
+    .side .blog-more{
+        padding:5px 10px;
+        margin-left: 15%;
+        color: #fed136;
+        border:1px solid #065279;
+        background-color: #1b3645;
+        border-radius: 8px;
+        text-decoration: none;
+    }
+
+
+   /*右侧栏css样式*/
+    .main{
+        float: left;
+        max-width: 70%;
+        min-height: 1232px;
+        background: #fff;
+        padding-left: 4%;
+        padding-right: 10%;
+        opacity: 0.95;
+        -moz-opacity: 0.95;
+    }
+
+    .main .skill>p:first-child{
+        font-weight: 700;
+        font-size:1.4em;
+        margin-top:50px;
+        letter-spacing: 3px;
+    }
+    .main hr{
+        border-top:1px solid #2f393b;
+        margin-top:5px;
+    }
+    .main .works>p:first-child{
+        font-weight: 700;
+        font-size:1.4em;
+        margin-top:50px;
+        letter-spacing: 3px;
+    }
+    .works .big-project li{
+        list-style: none;
+    }
+    .works .big-project img{
+        max-width: 400px;
+        height:250px;
+        border:1px solid #bbb;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+    @media screen and (max-width: 480px){
+        .works .big-project img{
+            width:200px;
+            height: 125px;
+        }
+    }
+
+.works .big-project img:hover{
+    opacity: 0.4;
+    border:1px solid #4187c3;
+}
+    .works .row img{
+        max-width: 100%;
+        height: 150px;
+        border:1px solid #cccccc;
+    }
+    .row .thumbnail img:hover{
+        opacity: 0.5;
+    }
+    .works .row .caption{
+        height: 141px;
+        overflow: scroll;
+    }
+
+   .main .hobbies ul>li{
+       max-width: 150px;
+       margin-left:45px;
+       float: left;
+       text-align: center;
+       list-style-type:none;
+   }
+
+/*页面底部css样式*/
+    .foot{
+        color: #fff;
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 25px;
+    }
+    .foot span{
+        border:1px solid #fff;
+        padding:5px 10px;
+    }
