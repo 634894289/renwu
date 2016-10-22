@@ -14,6 +14,11 @@ $textSize:12px;
   margin-bottom: 1.8rem;
   text-align: center;
 }
+
+@mixin inputMedia{
+  margin-bottom: 10px;
+}
+
 @mixin inputBox{
   border:none;
   background:rgba(0,0,0,0.3);
@@ -85,8 +90,16 @@ body{
   #login{
     width:150px;
     color: #fec000;
-  }
 
+  }
+  #login h1{
+    margin-bottom: 15px;
+  }
+  #login h3{
+    position: relative;
+    margin-bottom: 15px;
+    color: #ccc;
+  }
 }
 #login h1{
   margin-bottom: 40px;
@@ -96,6 +109,18 @@ body{
   margin-bottom: 2rem;
   color: #ccc;
 }
+
+@media screen and (max-width: 600px) {
+  #login h1{
+    margin-bottom: 5px;
+  }
+  #login h3{
+    position: relative;
+    margin-bottom: 5px;
+    color: #ccc;
+  }
+}
+
 h3:before{
   @include beforeAfter;
   margin-right:10px;
@@ -118,6 +143,15 @@ h3:after{
 .box-password{
   @include input;
 }
+
+@media screen and (max-width: 600px){
+  .box-account{
+    @include inputMedia;
+  }
+  .box-password{
+    @include inputMedia;
+  }
+}
 #login i{
   margin-left: 2px;
 }
@@ -127,6 +161,7 @@ h3:after{
 .box-password .password{
   @include inputBox;
 }
+
 @media screen and (max-width: 600px) {
   .box-account .account {
     width: 100%;
@@ -143,6 +178,7 @@ h3:after{
     padding:2px 0;
   }
 }
+
 #login .btn{
   background: #0d99a5;
   opacity: 0.5;
