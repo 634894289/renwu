@@ -11,7 +11,7 @@ var minicss = require('gulp-minify-css'),
 gulp.task('html',function () {
     gulp.src('html/*.html')
     .pipe(minhtml({collapseWhitespace:true}))
-        .pipe(gulp.dest('../'));
+        .pipe(gulp.dest('./'));
 });
 
 gulp.task('css',function () {
