@@ -35,4 +35,4 @@ gulp.task('js',function () {
        .pipe(gulp.dest('dist/src/js/'));
 });
 
-gulp.task('build', ['html', 'css', 'js', 'img']);
+gulp.task('build', ['html', 'css', 'js', 'image']);
