@@ -53,7 +53,7 @@
                         // me.joint($nodes);
                         me.pageN++;
                     }else {
-                        alert('数据还睡眼朦胧..')
+                        alert('数据不在服务区..')
                     }
                 }
             })

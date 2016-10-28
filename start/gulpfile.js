@@ -18,7 +18,7 @@ gulp.task('html',function () {
 });
 
 gulp.task('css',function () {
-    gulp.src('src/css/**/*')
+    gulp.src('src/css/index.css')
         .pipe(minifycss())
         .pipe(gulp.dest('dist/src/css/'));
 });
