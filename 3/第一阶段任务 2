@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>日照只为日出</title>
+<base target="_blank"/>
+<style type="text/css">
+  table,th,td{ 
+              border: 1px solid;
+              border-collapse: collapse;
+             }
+         th{background-color:#9cc; width: 30%;}  
+         .电话{background-color: #cc9999;}   
+
+div{width: 1000px;
+  background: gray;
+  margin: 0px auto;
+}
+    
+     #one{
+      background: #77cccc;
+      text-indent: 2em;
+      
+      color: #134;
+      letter-spacing: 2px;
+
+     }
+     img{
+      margin: 0px auto;
+     }
+     #two{
+      background: #77cccc;
+      text-indent: 2em;
+      color: #134;
+      letter-spacing: 2px
+     }
+     #three{
+      width: 600px;
+      background: #143;
+      margin:5px auto 0px;
+      padding:5px;
+     }
+
+</style>
+
+</head>
+<body bgcolor="#549688">
+<div>
+	<h1><font color="#7bcfa6">日照</font></h1>
+	<ul>
+		<li><a href="http://baike.baidu.com/link?url=yxmWdBhMKw3P2BKK6rO93qyQeeZLNFCMZ2ZF3OStv1EeuW5tMoAlkqO0YnaAmOlIKNGSqWVF1UeC4DIgpACX-F3KVvAQkSO38O9tsC7HH03">日照介绍</a></li>
+		<li><a href="http://hotel.qunar.com/city/rizhao/q-%E9%9D%92%E5%B9%B4%E6%97%85%E7%A4%BE?kwid=11955652&cooperate=baidu55">日照青年旅社</a></li>
+		<li><a href="http://hotel.qunar.com/city/rizhao/q-%E9%9D%92%E5%B9%B4%E6%97%85%E7%A4%BE?kwid=11955652&cooperate=baidu55">日照景点大全-攻略</a></li>
+     </ul>
+<font color="#1bd1a5" size="30">Day 1</font>
+        
+     <div id="one">
+        <h3>吴家台海滨日出</h3>
+<p>住在吴家台，最大的好处是可以最近的距离看到最美的日出。写日出的文章有很多，非常的优美，拍日出的照片也有很多，非常的漂亮，但是看再多文章和<a href="http://lvyou.baidu.com/pictravel/photo/view/5b24d49f1c3ca7a21359917b#3">照片</a>都没有用，不如到海边看一次真正的海上日出，那种美绝对是震撼的，是一种<strong>心灵的震撼</strong>，非亲身经历难以形容。</p>
+<img src="images/richu.jpg" width="600" height="400"/>
+<p>有人也许会说，<a href="http://lvyou.baidu.com/pictravel/photo/view/928984de732178db7e9f967b#1">日出</a>不都是一样吗，就是太阳从天边升起，一听这话就知道他没有<strong>真正</strong>的看过日出。
+</p>
+
+     </div>
+     <div id="two">
+
+<h3>吴家台唱海渔家</h3>
+<p>夏天日出时间太早了，看完日出刚五点多钟，回渔家补个觉吧。再次醒来已经是阳光满屋了。我们这几天住的唱海渔家，这是第二次住了，开始被他家吸引就是因为“渔风东来，唱响大海”的广告词以及他家的阳光大床房，这样的房间可不是哪个渔家都有的，旺季的周末很难订到。住渔家乐比住宾馆要便宜的多，而且玩起来方便，又可以真切感受海边渔民的生活，吃到<a href="http://lvyou.baidu.com/pictravel/photo/view/74810c576661e10d4e9d3491#28"><strong>便宜可口的海鲜</strong></a>，一举多得</p>
+<img src="images/xia.jpg" width="600" height="400" />
+<ul>
+	<li>日出</li>
+	<li>日出</li>
+	<li>日出</li>
+</ul>
+<p>日出也有它独特的美，这样的高度，光线依然柔和，火红的旭日和孤零的渔船形成了一幅绝美的画面。
+</p>
+<img src="images/richu1.jpg" width="600" height="400" />
+<p>我看过很多次日出，在日照吴家台的海边就看过好几次，每次都是完全不一样的，色彩、光线、氛围都完全不同，有时候同一地点前后一天差别都会很大。
+</p>
+<img src="images/日出前.jpg" width="600" height="400">
+   
+   </div>
+
+   <div id="three">
+
+<h1>去哪儿玩</h1>
+<h3>国内游：</h3>
+<ol>
+	<li><a href="http://lvyou.baidu.com/yili/">伊犁</a></li>
+	<li>大理</li>
+	<li>桂林</li>
+</ol>
+<table border="1"  >
+	<tr>
+		<th >当季游</th>
+		<th >国内游</th>
+		<th >国外游</th>
+	</tr>
+    <tr>
+    	<td>甪直</td>
+    	<td>伊犁</td>
+    	<td>熊本岛</td>
+    </tr>
+    <tr>
+    	<td>联系电话</td>
+    	<td class="电话" colspan="2">0731-2211888</td>
+    </tr>
+</table>
+
+<form>
+	请输入邮箱地址：<input type="text" name="mail" size="20" /><br/>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp密码：<input type="password" name="password"><br/>
+	请重复输入密码：<input type="password" name="password">密码为英文6-16位字母<br/>
+
+    性别：<input type="radio" name="sex" value="男"/>男
+         <input type="radio" name="sex" value="女"/>女
+         <br/>
+         城市：<select name="city">
+         <option value="北京">北京</option>
+         <option value="上海" selected="selected">上海</option>
+         <option value="广州">广州</option>
+         <option value="深圳">深圳</option>
+         	
+         </select>
+         <br/>
+         爱好：<input type="checkbox" name="运动"/>运动
+              <input type="checkbox" name="艺术"/>艺术
+              <input type="checkbox" name="科学"/>科学
+              <br/>
+          个人描述：
+          <br/><textarea rows="10" cols="80"> </textarea>
+          <br/>
+          <input type="submit" value="确认提交"/>
+
+</form>
+<p>版权所有©</p>
+    </div>
+
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
