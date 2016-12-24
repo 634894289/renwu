@@ -5,6 +5,7 @@ var fruitObj = function () {
     this.alive =[]; //布尔值.果实是否活着
     this.x = [];
     this.y = [];
+    this.aneNO = []
     this.l = [] ;  // 果实的大小
     this.spd = []; // 果实的速度 生长和漂
     this.fruitType = [];
@@ -14,6 +15,7 @@ var fruitObj = function () {
 }
 
 fruitObj.prototype.num = 30;
+
 fruitObj.prototype.init = function () {
 
     for(var i=0;i<this.num;i++)
@@ -21,6 +23,8 @@ fruitObj.prototype.init = function () {
         this.alive[i] = false;
         this.x[i] = 0;
         this.y[i] = 0;
+        this.aneNO[i] = 0;
+
         this.spd[i] = Math.random() * 0.017+0.003;  // 0.003-0.02
         this.fruitType[i] = "";
     }
@@ -35,18 +39,25 @@ fruitObj.prototype.draw = function () {
         //找到海葵位置 ==>生长 ===>往外漂
         if(this.alive[i] ) {
             if(this.fruitType[i] == "blue"){
+                //noinspection JSDuplicatedDeclaration
                 var pic = this.blue;
             }else {
                 var pic = this.orange;
             }
 
             if (this.l[i] <= 14) {
+                var NO = this.aneNO[i];
+                this.x[i] = ane.headx[NO];
+                this.y[i] = ane.heady[NO];
                 this.l[i] += this.spd[i] * deltaTime;
+                // console.log(this.aneNO[i])
+
+                // console.log(this.x[i])
             } else {
                 this.y[i] -= this.spd[i] * 4 * deltaTime;
+
             }
             ctx2.drawImage(pic, this.x[i] - this.l[i] * 0.5, this.y[i] - this.l[i] * 0.5, this.l[i], this.l[i]);
-
             if (this.y[i] < 10) {
                 this.alive[i] = false;
             }
@@ -58,9 +69,8 @@ fruitObj.prototype.draw = function () {
 
 //生长
 fruitObj.prototype.born= function (i) {
-    var aneID = Math.floor(Math.random() * ane.num);
-    this.x[i] = ane.x[aneID];
-    this.y[i] = canHeight - ane.len[aneID]
+
+    this.aneNO[i] = Math.floor(Math.random() * ane.num);
     this.l[i] = 0;
     this.alive[i] = true;
 
@@ -99,11 +109,3 @@ function sendFruit() {
 }
 
 
-fruitObj.prototype.update = function () {
-    var num =0;
-    for(var i=0;i<this.num;i++){
-        if (this.alive[i]) num++;
-    }
-
-
-}

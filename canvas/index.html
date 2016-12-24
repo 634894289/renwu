@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="height=device-width, initial-scale=1">
-    <title>Title</title>
+    <title>Fish Mom</title>
     <style>
         body{
             padding-top:20px;
@@ -31,6 +31,23 @@
             left:0;
             z-index:0;
         }
+
+        #btn{
+            margin-top:20px;
+            text-align: center;
+
+        }
+        #start{
+            color: orange;
+            border:1px solid #1685a9;
+            border-radius: 5px;
+            box-shadow:0 0 10px cornflowerblue;
+            padding:5px 10px;
+            text-decoration: none;
+        }
+        #start:hover{
+            background: #1685a9;
+        }
     </style>
 </head>
 <body>
@@ -38,6 +55,9 @@
     <div id="all_canvas">
         <canvas id="canvas1" width="800" height="600"></canvas>
         <canvas id="canvas2" width="800" height="600"></canvas>
+    </div>
+    <div id="btn">
+        <a id="start" href="javascrip:;" >GAME STAR</a>
     </div>
     <!--<img src="src/background.jpg" alt="">-->
 </div>
@@ -49,10 +69,9 @@
 <script type="text/javascript" src="js/mom.js"></script>
 <script type="text/javascript" src="js/collsion.js"></script>
 <script type="text/javascript" src="js/baby.js"></script>
-
-
-
-
-
+<script type="text/javascript" src="js/data.js"></script>
+<script type="text/javascript" src="js/wave.js"></script>
+<script type="text/javascript" src="js/halo.js"></script>
+<script type="text/javascript" src="js/dust.js"></script>
 </body>
 </html>
