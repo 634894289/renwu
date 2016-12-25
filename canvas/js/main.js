@@ -178,9 +178,7 @@ function onMouseMove(e) {
 
 }
 
-
     start = document.getElementById("start");
     start.onclick=function () {
-
-        window.location.reload();
+        init();
     };
