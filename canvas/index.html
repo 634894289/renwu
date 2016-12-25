@@ -8,6 +8,14 @@
         body{
             padding-top:20px;
         }
+        ul{
+            padding:0;
+            margin:0;
+        }
+        li{
+
+            list-style: none;
+        }
         .all_bg{
             width:800px;
             height:600px;
@@ -47,6 +55,27 @@
         }
         #start:hover{
             background: #0065CC;
+            opacity: 0.5;
+            transition: all 0.5s;
+        }
+
+        #aside{
+            width: 200px;
+            position: fixed;
+            left:20px;
+            top:100px;
+            border:1px solid cornflowerblue;
+            border-radius: 10px;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+        #aside li{
+            padding-top:10px;
+            line-height: 20px;
+            color: #0065CC;
+        }
+        h3{
+            text-align: center;
         }
     </style>
 </head>
@@ -55,6 +84,15 @@
     <div id="all_canvas">
         <canvas id="canvas1" width="800" height="600"></canvas>
         <canvas id="canvas2" width="800" height="600"></canvas>
+    </div>
+
+    <div id="aside">
+        <h3>KISS FISH 游戏规则</h3>
+        <ul>
+            <li>1. 大鱼吃到果实后要及时亲亲小鱼哦 2333,不然小鱼变白就Game Over白白了.</li>
+            <li>2. 黄色果实计分100,蓝色果实计分200.</li>
+            <li>3. LIFE START 重新开始游戏.</li>
+        </ul>
     </div>
     <div id="btn">
         <a id="start" href="javascrip:;" >LIFE START</a>

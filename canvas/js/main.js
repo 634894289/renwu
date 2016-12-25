@@ -44,7 +44,12 @@ var dustPic =[];
 
 var start;
 
-document.body.onload = game;
+document.body.onload = function () {
+
+    game();
+    data.gameOver = true;
+
+};
 function game(){
 
     init();
